@@ -1,5 +1,11 @@
-# nextjs-mocks
-Mocked modules of Next.js for unit testing with Jest
+# Next.js Mocks
+Mocked modules of Next.js for unit testing with Jest.
+
+#### Mocked modules
+- `next/navigation`
+- `next/headers`
+- `next/cache`
+- `next/server`
 
 ### How to use
 
