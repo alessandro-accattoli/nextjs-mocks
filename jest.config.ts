@@ -14,6 +14,7 @@ const config: Config = {
         "^next/navigation$": "<rootDir>/__mocks__/next/navigation.ts",
         "^next/headers$": "<rootDir>/__mocks__/next/headers.ts",
         "^next/cache$": "<rootDir>/__mocks__/next/cache.ts",
+        "^next/server$": "<rootDir>/__mocks__/next/server.ts",
     }
 }
 
