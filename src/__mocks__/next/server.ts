@@ -6,7 +6,11 @@ export const NextRequest = jest.fn().mockImplementation((url: string) => ({
         set: jest.fn(),
         delete: jest.fn(),
     },
-    nextUrl: { pathname: "/mock-path", searchParams: new URLSearchParams() },
+    nextUrl: {
+        pathname: "/mock-path",
+        searchParams: new URLSearchParams(),
+        toString: jest.fn().mockImplementation(() => url)
+    },
 }));
 
 export const NextResponse = {
@@ -24,6 +28,7 @@ export const NextResponse = {
         type: "revalidate",
         path,
     })),
+    next: jest.fn()
 };
 
 export const userAgent = jest.fn(() => ({
